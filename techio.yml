@@ -1,10 +1,10 @@
-title: C++ Project
+title: Les listes
 plan:
-- title: Welcome
-  statement: markdowns/welcome.md
+- title: Introduction
+  statement: markdowns/introduction.md
 projects:
-  cpp:
-    root: /cpp-project
+  tassement:
+    root: /tassement
     runner:
       name: techio/cmake-gcc-runner
       version: latest
