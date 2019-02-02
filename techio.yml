@@ -1,10 +1,10 @@
-title: Les listes
+title: Les structures de données simples dynamiques
 plan:
 - title: Introduction
   statement: markdowns/introduction.md
-projects:
-  tassement:
-    root: /tassement
-    runner:
-      name: techio/cmake-gcc-runner
-      version: latest
+- title: Exercice 1 
+  statement: markdowns/ex1_pile.md
+- title: Exercice 2
+  statement: markdowns/ex2_file.md
+- title: Exercice 3
+  statement: markdowns/ex3_listeordonnee.md
