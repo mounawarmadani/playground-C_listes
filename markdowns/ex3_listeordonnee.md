@@ -4,7 +4,7 @@
 
 Déterminez les paramètres et les valeurs de retours des fonctions permettant la manipulation d'une liste ordonnée d'entiers. Implémentez ces fonctions.
 
-- ``... insert(...)`
+- `... insert(...)`
 - `... remove(...)`
 - `... is_empty(...)`
 - `... find(...)`
