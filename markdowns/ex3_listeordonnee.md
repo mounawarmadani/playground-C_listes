@@ -8,6 +8,7 @@ Déterminez les paramètres et les valeurs de retours des fonctions permettant l
 - `... remove(...)`
 - `... is_empty(...)`
 - `... find(...)`
+- `... size(...)`
 
 Implémentez également les fonctions d'affichage et de libération de la liste.
  
