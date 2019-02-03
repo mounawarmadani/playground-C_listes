@@ -27,7 +27,7 @@ struct pile *p;
 ```
 ![Etat initial d'une pile d'entiers](images/pile_vide.png)
 
-### L'ajout d'un élément : l'opération push
+### L'ajout d'un élément : l'opération `push()`
 
 Les éléments 2, 1 et 10 (valeurs servant pour l'exemple) sont insérés sur la pile dans cet ordre. 
 On observe que le pointeur p ainsi que le heap est modifié à chaque ajout. Chaque élément possède un pointeur prec qui permet de désigner l'élément inséré précédemment.
@@ -37,11 +37,12 @@ La représentation de la mémoire à chaque étape est la suivante :
 |---------------|---------------|---------------|
 |![push d'un element](images/pile_1element.png)|![push d'un deuxième élément](images/pile_2elements.png)|![push d'un troisième élément](images/pile_3elements.png)| 
 
-### La suppression d'un élément : l'opération pop
-Si la pile n'est pas vide  , l'opération pop va permettre de récupérer et retirer l'élément à son sommet.
-La mémoire allouée sur le heap pour l'élément est récupérée.
-Dans l'exemple, l'élément 10 désigné par p est retiré et la pile se retrouve dans l'état suivant:
-![L'état  de la pile d'entiers après l'opération pop](images/pile_2elements.png)
+### La supression d'un élément : l'opération `pop()`
+Si la pile n'est pas vide  , l'opération `pop()` va permettre de récupérer et retirer l'élément à son sommet. Dans certaines implémentations, une opération `top()` permet
+d'accéder à l'élément au sommmet de la pile sans le retirer alors que `pop()` le retire sans le renvoyer.
+Dans l'exemple, la mémoire allouée sur le heap pour l'élément est récupérée.
+L'élément 10 désigné par p est retiré et la pile se retrouve dans l'état suivant:
+![L'état  de la pile d'entiers après l'opération pop()](images/pile_2elements.png)
 
 ## Les files
 Les files correspondent au principe FIFO : First In First Out.
@@ -58,18 +59,18 @@ struct file *f;
 ```
 ![Etat initial d'une file d'entiers](images/file_vide.png)
 
-### L'ajout d'un élément : l'opération insert
+### L'ajout d'un élément : l'opération `add()`
 Lorsque la file est vide, le pointeur de tête est modifié. Dans le cas contraire, il ne l'est pas et le nouvel élément est ajouté en fin de liste.
 
-|insert d'un element|insert d'un deuxième élément|insert d'un troisième élément|
+|add d'un element|add d'un deuxième élément|add d'un troisième élément|
 |---------------|---------------|---------------|
-|![insert d'un element](images/file_1element.png)|![insert d'un deuxième élément](images/file_2elements.png)|![insert d'un troisième élément](images/file_3elements.png)| 
+|![add d'un element](images/file_1element.png)|![add d'un deuxième élément](images/file_2elements.png)|![add d'un troisième élément](images/file_3elements.png)| 
 
-### La supression d'un élément : l'opération remove
-Si la file n'est pas vide  , l'opération remove va permettre de récupérer et retirer le premier élément de la file.
+### La récupération d'un élément : l'opération `get()`
+Si la file n'est pas vide  , l'opération `get()` va permettre de récupérer et retirer le premier élément de la file.
 La mémoire allouée sur le heap pour l'élément est récupérée.
 Dans l'exemple, l'élément 2 désigné par f est retiré et la file se retrouve dans l'état suivant:
-![L'état  de la file d'entiers après l'opération remove](images/file_remove.png)
+![L'état  de la file d'entiers après l'opération get](images/file_remove.png)
 
 ## Les listes ordonnées
 
@@ -80,7 +81,7 @@ Sur une liste ordonnées, les opérations classiques que l'on peut réaliser son
 - rechercher un élément
 - tester si la liste est vide
 
-### Inserer un élément
+### Inserer un élément : `insert()`
 
 Un élément peut être insérer en tête, au sein ou en fin de liste selon sa valeur. Dans l'exemple ci-dessous, un élément de valeur 3 est inséré au sein de la liste et l'élément
 5 sera insérer en fin de liste ordonnée.
@@ -89,7 +90,7 @@ Un élément peut être insérer en tête, au sein ou en fin de liste selon sa v
 |---------------|---------------|
 |![insert d'un element](images/liste_insertmiddle.png)|![insert d'un élément à la fin](images/liste_insertfin.png)|
 
-### Supprimer un élément
+### Supprimer un élément  : `remove()`
 L'élément à supprimer peut se trouver en tête , au sein de la liste ou en fin de liste.
 L'opération permettra de retirer l'élément du chaînage et de désallouer la mémoire qu'il occupait sur le heap.
 

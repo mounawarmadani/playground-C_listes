@@ -4,10 +4,10 @@
 
 Déterminez les paramètres et les valeurs de retours des fonctions permettant la manipulation d'une liste ordonnée d'entiers. Implémentez ces fonctions.
 
-- ... insert(...)
-- ... remove(...)
-- ... is_empty(...)
-- ... find(...)
+- ``... insert(...)`
+- `... remove(...)`
+- `... is_empty(...)`
+- `... find(...)`
 
 Implémentez également les fonctions d'affichage et de libération de la liste.
  
